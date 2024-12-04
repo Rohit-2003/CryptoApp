@@ -1,0 +1,8 @@
+<!-- File: res/values/arrays.xml -->
+<resources>
+    <string-array name="encryption_schemes">
+        <item>Caesar Cipher</item>
+        <item>Reverse Cipher</item>
+        <item>Base64 Encoding</item>
+    </string-array>
+</resources>

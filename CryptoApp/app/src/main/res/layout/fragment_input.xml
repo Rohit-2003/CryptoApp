@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input Text Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text"
+        app:boxStrokeColor="@color/primary"
+        app:boxStrokeWidth="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Key Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter key"
+        app:boxStrokeColor="@color/primary"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/keyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Scheme Dropdown -->
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/schemeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_spinner" />
+
+    <!-- Encrypt Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/encryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:layout_marginTop="16dp" />
+
+    <!-- Decrypt Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/decryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:layout_marginTop="16dp" />
+
+    <!-- Output Text -->
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Output will appear here"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="24dp" />
+</LinearLayout>
